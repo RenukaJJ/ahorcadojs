@@ -24,8 +24,6 @@ function Validar(){
     else{
         notvalid.innerHTML += letter;
     }
-
-    
     inputLetter.value = "";
 }
 
