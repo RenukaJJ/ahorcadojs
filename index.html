@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Ahorcado</h1>
+    <div>
+        <label for="secret">Word (8 characters minimum):</label>
+        <input type="password" id="secret" minlength="8" required />
+        <button onclick="Start()">Start game</button>
+    </div>
+    <div>
+        <label for="gameWord">Word:</label>
+        <p id="containers"></p>
+    </div>
+    <br/>
+    <div>
+        <label for="notValid">Letras no validas:</label>
+        <p id="notValid"></p>
+    </div>
+    <br/>
+    <div>
+
+        <label for="letter">Letter:</label>
+        <input type="text" id="letter" minlength="1" maxlength="1" onkeydown="return /[a-zA-Z]/i.test(event.key)"/>
+        <button onclick="Validar()">Check</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
